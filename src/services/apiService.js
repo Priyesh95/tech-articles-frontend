@@ -9,7 +9,8 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.request.use(
   (config) => {
-    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YjY3MjhkOTRjYzliMzk3YWE5MGI4MCIsImlhdCI6MTcyMzIzNDA2NCwiZXhwIjoxNzI1ODI2MDY0fQ.psnzUfyn2gIpwBPoIOSREGDBYSqU2CSl6ljoxodVY1g";
+    
+    const token = localStorage.getItem('authToken');
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
     }
@@ -33,6 +34,7 @@ try {
     email,
     password,
   });
+  localStorage.setItem('token', response.data.token);
   return response;
 }
 catch (error){
