@@ -14,7 +14,7 @@ The application uses:
 
 - **User Authentication**: Register and log in to access the application.
 - **Article Management**: View, read, like, and create articles.
-- **Dashboard**: Visualize most viewed and most liked articles using charts.
+- **Dashboard**: Visualize most viewed and most liked articles using charts which is fetched from Redis.
 
 ## Installation
 
