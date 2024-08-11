@@ -1,0 +1,44 @@
+.homepage-container {
+    padding: var(--padding);
+  }
+  
+  .article-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards per row */
+    gap: 1rem; /* Adjust the gap between cards */
+  }
+
+  .article-list-heading {
+    font-size: 2rem; /* Adjust font size as needed */
+    color: var(--heading-color); /* Define your theme color */
+    margin-bottom: 1.5rem; /* Space below the heading */
+    text-align: center; /* Center the heading */
+  }
+  
+  .article-card {
+    box-sizing: border-box; /* Include padding and border in width */
+    display: flex;
+    flex-direction: column;
+    min-width: 0; /* Ensure cards do not overflow */
+    height: 100%; /* Ensure consistent height */
+  }
+  
+  /* Responsive Design Adjustments */
+  @media (max-width: 1024px) {
+    .article-list {
+      grid-template-columns: repeat(3, 1fr); /* 3 cards per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .article-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on even smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .article-list {
+      grid-template-columns: 1fr; /* 1 card per row on very small screens */
+    }
+  }
+  

@@ -1,0 +1,32 @@
+/* src/styles/Dashboard.css */
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .chart {
+    flex: 1; /* Makes each chart take up equal space */
+    min-width: 0; /* Ensures charts do not overflow their container */
+    box-sizing: border-box;
+  }
+  
+  .chart-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Adjust height as needed */
+  }
+  
+  .chart-title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+  

@@ -1,0 +1,61 @@
+.article-card {
+    background-color: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out;
+    height: 100%; /* Ensure the card takes the full height of its container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .article-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .article-title-card {
+    font-size: 1.25rem;
+    color: var(--heading-color);
+    margin-bottom: 0.75rem;
+  }
+  
+  .article-description {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    flex-grow: 1; /* Allow the description to expand to fill available space */
+  }
+  
+  .article-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .article-button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .article-button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .article-likes {
+    font-size: 0.875rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+  }
+  
+  .likes-icon {
+    margin-right: 0.5rem;
+  }
+  
